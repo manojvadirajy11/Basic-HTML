@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIME TABLE 5B CSE</title>
+    <style>
+        table {
+            border-collapse: collapse; /* Explicitly collapses borders into a single clean line */
+            width: 100%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid rgb(12, 26, 99);
+            padding: 8px;
+            height: 20px;
+        }
+        th {
+            background-color: #ffffff;
+            font-weight: bold;
+            /* Ensures a solid dark line right beneath the header times */
+            border-bottom: 2px solid rgb(12, 26, 99) !important;
+        }
+        
+        th.day-col, td.day-col {
+            width: 8%; 
+            background-color: #eff4f2 !important; 
+            font-weight: bold;
+        }
+
+        /* Enforces a thick, distinct dark dividing line separating each day group */
+        .day-separator td {
+            border-bottom: 2px solid rgb(12, 26, 99) !important;
+        }
+
+        /* Styles the unified continuous vertical Tea Break */
+        td.tea-break {
+            background-color: #f7f9fa !important;
+            font-weight: bold;
+            color: #555555;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            writing-mode: vertical-lr; /* Rotates text vertically for a sleek look */
+            transform: rotate(180deg);
+            width: 4%;
+            /* Ensures the outer boundaries stay perfectly crisp and unclipped */
+            border-left: 1px solid rgb(12, 26, 99) !important;
+            border-right: 1px solid rgb(12, 26, 99) !important;
+            border-bottom: 2px solid rgb(12, 26, 99) !important;
+        }
+        
+        /* Set to a crisp, subtle sky blue */
+        tr:nth-child(even) td {
+            background-color: #e6f2ff;
+        }
+        /* Set to a slightly deeper soft ice blue */
+        tr:nth-child(odd) td {
+            background-color: #cce6ff;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>5th Sem Timetable 2024 batch</h1></center>
+    <hr>
+    <table>
+        <!-- Header: 11 Columns Total -->
+        <tr>
+            <th class="day-col">Time / Days</th>
+            <th>8:00 to 9:00</th>
+            <th>9:00 to 10:00</th>
+            <th>10:00 to 10:30</th>
+            <th>10:30 to 11:30</th>
+            <th>11:30 to 12:30</th>
+            <th>12:30 to 1:30</th>
+            <th>1:30 to 2:30</th>
+            <th>2:30 to 3:30</th>
+            <th>3:30 to 4:30</th>
+            <th>4:30 to 5:30</th>
+        </tr>
+        
+        <!-- MONDAY -->
+        <tr>
+            <td rowspan="3" class="day-col">MON</td>
+            <td>CNS</td>
+            <td>TOC</td>
+            <!-- Single cell spanning 18 sub-rows downward across all days -->
+            <td rowspan="18" class="tea-break">Tea Break</td>
+            <td>AI</td>
+            <td>SE</td>
+            <td>RM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>KNP</td>
+            <td>SHG</td>
+            <td>MJ</td>
+            <td>MH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="day-separator">
+            <td>519</td>
+            <td>519</td>
+            <td>519</td>
+            <td>519</td>
+            <td>519</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- TUESDAY -->
+        <tr>
+            <td rowspan="3" class="day-col">TUE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>AI</td>
+            <td>SE</td>
+            <td>TOC</td>
+            <td>CNS</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>MJ</td>
+            <td>MH</td>
+            <td>SHG</td>
+            <td>KNP</td>
+            <td></td>
+        </tr>
+        <tr class="day-separator">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>521</td>
+            <td>521</td>
+            <td>521</td>
+            <td>521</td>
+            <td></td>
+        </tr>
+
+        <!-- WEDNESDAY -->
+        <tr>
+            <td rowspan="3" class="day-col">WED</td>
+            <td>RM</td>
+            <td>SE</td>
+            <td>TOC</td>
+            <td>AI</td>
+            <td></td>
+            <td colspan="2">WT Lab/CNS Lab</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>MH</td>
+            <td>SHG</td>
+            <td>MJ</td>
+            <td></td>
+            <td>B1+B2</td>
+            <td>B3+B4</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="day-separator">
+            <td>519</td>
+            <td>519</td>
+            <td>519</td>
+            <td>519</td>
+            <td></td>
+            <td>503</td>
+            <td>527A</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- THURSDAY -->
+        <tr>
+            <td rowspan="3" class="day-col">THU</td>
+            <td></td>
+            <td></td>
+            <td>Online</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>EVS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="day-separator">
+            <td></td>
+            <td></td>
+            <td>KRS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- FRIDAY -->
+        <tr>
+            <td rowspan="3" class="day-col">FRI</td>
+            <td colspan="2">WT Lab/CNS Lab</td>
+            <td>TOC</td>
+            <td>CNS</td>
+            <td></td>
+            <td>RM</td>
+            <td>SE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>B3+B4</td>
+            <td>B1+B2</td>
+            <td>SHG</td>
+            <td>KNP</td>
+            <td></td>
+            <td></td>
+            <td>MH</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="day-separator">
+            <td>503</td>
+            <td>527A</td>
+            <td>527C</td>
+            <td>527C</td>
+            <td></td>
+            <td>527C</td>
+            <td>527C</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- SATURDAY -->
+        <tr>
+            <td rowspan="3" class="day-col">SAT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="day-separator">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
